@@ -1,12 +1,9 @@
 
-public class test1 {
+public class newclass3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//Hello worlDDD
-		//Test1 test
-
+//kamali
 	}
-
 
 }
