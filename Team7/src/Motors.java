@@ -16,14 +16,14 @@ public class Motors extends Thread {
   }
 
   public static void run1() {
-    motorA.setSpeed(200);
+    motorA.setSpeed(200);// I think the speed of returning to the line is low, we can increase both by maintaining its proportion.
     motorD.setSpeed(100);
     motorA.forward();
     motorD.forward();
   }
 
   public static void run2() {
-    motorA.setSpeed(100);
+    motorA.setSpeed(100); // Same for this
     motorD.setSpeed(200);
     motorA.forward();
     motorD.forward();
