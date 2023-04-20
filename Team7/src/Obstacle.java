@@ -31,7 +31,7 @@ public class Obstacle {
 		  }
 
 		  private static EV3UltrasonicSensor us1 = new EV3UltrasonicSensor(SensorPort.S1);
-		  SampleProvider sp = us1.getDistanceMode();
+		  SampleProvider sp = us1.getDistanceMode(); // Create object for SampleProvider
 
 		  int distanceValue = 0;
 
