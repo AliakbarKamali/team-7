@@ -10,20 +10,20 @@ public class Obstacle {
 //taheri test1
 		//test2
 // main
-		import lejos.hardware.Button;
-		import lejos.hardware.motor.EV3LargeRegulatedMotor;
-		import lejos.hardware.port.MotorPort;
-		import lejos.hardware.port.SensorPort;
-		import lejos.hardware.sensor.EV3UltrasonicSensor;
-		import lejos.robotics.RegulatedMotor;
-		import lejos.robotics.SampleProvider;
-		import lejos.utility.Delay;
-		import java.util.concurrent.atomic.AtomicBoolean;
-		import lejos.hardware.Sound;
+		import lejos.hardware.Button;  // library of javalejos
+		import lejos.hardware.motor.EV3LargeRegulatedMotor; // library of javalejos
+		import lejos.hardware.port.MotorPort; // library of javalejos
+		import lejos.hardware.port.SensorPort; // library of javalejos
+		import lejos.hardware.sensor.EV3UltrasonicSensor; // library of javalejos
+		import lejos.robotics.RegulatedMotor; // library of javalejos
+		import lejos.robotics.SampleProvider; // library of javalejos
+		import lejos.utility.Delay; // library of javalejos
+		import java.util.concurrent.atomic.AtomicBoolean; // library of javalejos
+		import lejos.hardware.Sound; // library of javalejos
 
 		public class Obstacle implements Runnable {
-
-		  AtomicBoolean robotStop;
+                //public class
+		  AtomicBoolean robotStop;  // we use AtomicBoolean for work of all classes
 		  AtomicBoolean robotrotate;
 		  public Obstacle(AtomicBoolean robotStop, AtomicBoolean robotrotate) {
 		    this.robotStop = robotStop;
