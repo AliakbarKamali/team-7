@@ -28,7 +28,7 @@ public class Obstacle implements Runnable {
 
     while (true) {
       System.out.println("Distance: " + distanceValue);
-      float[] sample = new float[sp.sampleSize()];
+      float[] sample = new float[sp.sampleSize()]; //create array sample
       sp.fetchSample(sample, 0);
       distanceValue = (int) (sample[0] * 100);
       if (distanceValue <= 20) {
