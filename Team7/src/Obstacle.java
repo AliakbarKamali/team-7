@@ -35,7 +35,7 @@ public class Obstacle implements Runnable {
         robotStop.set(true);
 //        Sound.buzz();
                 int[] frequencies = { 440, 494, 523, 587, 659, 698, 784 }; // Frequencies in Hz
-                  int[] durations = { 500, 500, 500, 500, 500, 500, 1000 }; // Durations in milliseconds
+                  int[] durations = { 300, 500, 200, 500, 200, 300, 1000 }; // Durations in milliseconds
                   
                   for (int i = 0; i < frequencies.length; i++) {
                      Sound.playTone(frequencies[i], durations[i]);
