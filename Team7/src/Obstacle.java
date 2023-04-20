@@ -1,18 +1,18 @@
 import lejos.hardware.Button;
 import lejos.hardware.motor.EV3LargeRegulatedMotor;
-import lejos.hardware.port.MotorPort;
-import lejos.hardware.port.SensorPort;
-import lejos.hardware.sensor.EV3UltrasonicSensor;
-import lejos.robotics.RegulatedMotor;
-import lejos.robotics.SampleProvider;
-import lejos.utility.Delay;
-import java.util.concurrent.atomic.AtomicBoolean;
-import lejos.hardware.Sound;
+import lejos.hardware.port.MotorPort; // javalejos library
+import lejos.hardware.port.SensorPort; // javalejos library
+import lejos.hardware.sensor.EV3UltrasonicSensor;// javalejos library
+import lejos.robotics.RegulatedMotor;// javalejos library
+import lejos.robotics.SampleProvider;// javalejos library
+import lejos.utility.Delay;// javalejos library
+import java.util.concurrent.atomic.AtomicBoolean;// javalejos library
+import lejos.hardware.Sound;// javalejos library
 
 public class Obstacle implements Runnable {
 
-  AtomicBoolean robotStop;
-  AtomicBoolean robotrotate;
+  AtomicBoolean robotStop; //AtomicBoolean for useing all class
+  AtomicBoolean robotrotate; //AtomicBoolean for useing all class
   public Obstacle(AtomicBoolean robotStop, AtomicBoolean robotrotate) {
     this.robotStop = robotStop;
     this.robotrotate = robotrotate;
