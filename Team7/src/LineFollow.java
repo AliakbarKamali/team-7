@@ -41,7 +41,7 @@ public class LineFollow implements Runnable {
           if (redValue1 < 0.2) {
             forStopWhile = true;
             Motors.run4();
-            robotStop.set(false);
+            robotStop.set(false); //for the second obstacle
           }
         }
       }
