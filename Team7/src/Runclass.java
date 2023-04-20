@@ -10,7 +10,7 @@ public class Runclassss extends Thread {
 		AtomicBoolean robotrotate = new AtomicBoolean(false);
 		Motors motorsObj = new Motors();
 		LineFollow LFObj = new LineFollow(robotStop, robotrotate);
-		Obstacle ODObj = new Obstacle(robotStop, robotrotate);
+		Obstacle ODObj = new Obstacle(robotStop, robotrotate); //create new object for Obstacle
 		Thread thread1 = new Thread(LFObj);    //  creating a thread object to run in LineFollow class 
 		Thread thread2 = new Thread(ODObj);    //  creating a thread object to run in Obstacle class 
 		Thread thread3 = new Thread(motorsObj);//  creating a thread object to run in Motors class 
