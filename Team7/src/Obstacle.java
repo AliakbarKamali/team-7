@@ -47,7 +47,7 @@ public class Obstacle {
 		        robotStop.set(true);
 //		        Sound.buzz();
 		                int[] frequencies = { 440, 494, 523, 587, 659, 698, 784 }; // Frequencies in Hz
-		                  int[] durations = { 500, 500, 500, 500, 500, 500, 1000 }; // Durations in milliseconds
+		                  int[] durations = { 100, 200, 300, 100, 200, 300, 1000 }; // Durations in milliseconds
 		                  
 		                  for (int i = 0; i < frequencies.length; i++) {
 		                     Sound.playTone(frequencies[i], durations[i]);
