@@ -15,8 +15,8 @@ public class Runclassss extends Thread {
 		Thread thread2 = new Thread(ODObj);    //  creating a thread object to run in Obstacle class 
 		Thread thread3 = new Thread(motorsObj);//  creating a thread object to run in Motors class 
 
-		thread1.start();  
-		thread2.start();  
-		thread3.start();  
+		thread1.start();  //For LineFollow
+		thread2.start();  //For Obstacle
+		thread3.start();  //For Motors
 	}
 }
