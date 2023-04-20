@@ -16,7 +16,7 @@ public class LineFollow implements Runnable {
     this.robotStop = robotStop;
     this.robotrotate = robotrotate;
   }
-
+  
   EV3ColorSensor colorSensor = new EV3ColorSensor(SensorPort.S3);
   SampleProvider colorProvider = colorSensor.getRedMode();
   float[] sample = new float[colorProvider.sampleSize()];
@@ -24,8 +24,8 @@ public class LineFollow implements Runnable {
   @Override
   public void run() {
     while (true) {
-      colorProvider.fetchSample(sample, 0);
-      float redValue = sample[0];
+      colorProvider.fetchSample(sample, 0); // to fetch color sample 
+      float redValue = sample[0]; // to assign the first sample to redvalue
       if (redValue < 0.2) {
         Motors.run1();
       } else {
@@ -34,7 +34,7 @@ public class LineFollow implements Runnable {
       if (robotStop.get() && !robotrotate.get()) {
         Motors.run3();
 
-        boolean forStopWhile = false;
+        boolean forStopWhile = false; // creat a boolean attribute
         while (!forStopWhile) {
           colorProvider.fetchSample(sample, 0);
           float redValue1 = sample[0];
